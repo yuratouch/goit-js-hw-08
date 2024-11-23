@@ -1,0 +1,38 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+li.gallery-item {
+  width: 360px;
+}
+
+.modal-image {
+  position: relative;
+}
+
+.modal-image-caption {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #fff;
+  background-color: #0000008c;
+  padding: 5px 10px;
+}
+
+.modal-wrapper.basicLightbox--visible .basicLightbox__placeholder {
+  transform: scale(0.95);
+}
